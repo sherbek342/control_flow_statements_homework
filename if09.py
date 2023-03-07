@@ -9,4 +9,12 @@ def main(a):
     Returns:
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False.
     """
-    return
+
+    x = (a%10)*10
+    y = a//10
+    ans = x+y
+    if ans <= a:
+        return True
+    if ans >= a:
+        return False
+print(main(a=93))
